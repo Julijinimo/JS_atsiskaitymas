@@ -10,4 +10,30 @@ turėti bent minimalų stilių ir būti responsive;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json'
-console.log(cars.json);
+
+fetch(ENDPOINT)
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+
+    const showCars = (cars) => {  
+        output.innerText = `${cars.brand}`;
+      
+      
+        const card = document.createElement('div');
+        card.append(cars);
+        document.body.append(card);
+      };
+
+      const fetchRandomUser = async () => {
+        try {
+          const response = await fetch(ENDPOINT);
+          if (response.ok) {
+            const data = await response.json();
+            showCars(data);
+          }
+        } catch(error) {
+          console.error(error);
+        }
+      };
+      
+      fetchRandomUser();
