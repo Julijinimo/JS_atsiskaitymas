@@ -9,11 +9,6 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
 
-// function poundConverter(kg) {
-//     document.getElementById("search").innerHTML = kg / 2.2046;
-//   };
-
-
   function lbToKg(event) {
     event.preventDefault();
     const kgInputValue = event.target.value;
@@ -29,4 +24,6 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
   }
   
   document.getElementById('search').addEventListener('click', lbToKg)
+
+  //Neįveikiau užduoties
   
