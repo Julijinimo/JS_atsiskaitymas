@@ -8,3 +8,25 @@ pamatyti jo pateikto svorio kovertavimą į:
 Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 <div id="output"></div> viduje, bei turi turėti bent minimalų stilių;
 ------------------------------------------------------------------- */
+
+// function poundConverter(kg) {
+//     document.getElementById("search").innerHTML = kg / 2.2046;
+//   };
+
+
+  function lbToKg(event) {
+    event.preventDefault();
+    const kgInputValue = event.target.value;
+    const outputElement = document.getElementById('output');
+    if (kgInputValue) {
+      const kg = Number(kgInputValue);
+      const lb = (kg / 2.2046).toFixed(1);
+      outputElement.innerText = lb;
+    } else {
+      outputElement.innerText = '';
+    }
+    event.preventDefault();
+  }
+  
+  document.getElementById('search').addEventListener('click', lbToKg)
+  
