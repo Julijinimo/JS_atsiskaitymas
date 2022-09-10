@@ -25,5 +25,4 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
   
   document.getElementById('search').addEventListener('click', lbToKg)
 
-  //Neįveikiau užduoties
   

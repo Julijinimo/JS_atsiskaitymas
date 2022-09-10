@@ -17,6 +17,7 @@ fetch(ENDPOINT)
     .then((response) => response.json())
     .then((data) => console.log(data));
 
+
 showUsers();
 
 const showUsersButton = document.getElementById('btn');
@@ -47,6 +48,4 @@ function showUsers() {
       });
     });
 };
-
-
   

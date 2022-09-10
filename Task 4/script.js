@@ -11,6 +11,7 @@ turėti bent minimalų stilių ir būti responsive;
 
 const ENDPOINT = 'cars.json'
 
+
 // fetch(ENDPOINT)                          Fetchas skirtas for information only
 //     .then((response) => response.json())
 //     .then((data) => console.log(data)); 
