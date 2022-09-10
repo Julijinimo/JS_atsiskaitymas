@@ -17,6 +17,12 @@
   background-color: #222;
 }
 
+@media screen and (min-width: 800px) {
+  .wrapper {
+    background-color: green;
+  }
+}
+
 .btn-container {
   width: 100%;
   display: flex;
@@ -40,7 +46,7 @@
   opacity: 0.9;
 }
 
-.output-cointainer {
+.output-container {
   width: 100%;
   margin: 25px 0;
   display: flex;
@@ -48,14 +54,25 @@
   align-items: center;
 }
 
-.output-cointainer h1 {
+.output-container h1 {
   color: #fff;
 }
 
-.output-cointainer #output {
+.output-container #output {
   width: 80%;
   margin-top: 25px;
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+}
+
+#users-list {
+  border: 5px solid black;
+  color: red;
+  list-style-type: none;
+  padding: 5px;
+}
+
+#users-list.li {
+  padding: 20px;
 }
